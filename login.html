@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Login</title>
+    <!-- Pemanggilan Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      /* Gaya tambahan */
+      .left-side {
+        padding: 50px;
+        background-image: url("gambar login.PNG");
+        background-size: cover;
+      }
+
+      .right-side {
+        padding: 50px;
+        color: white;
+        background-color: #289d57;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 left-side">
+          <!-- Gambar atau konten untuk bagian kiri -->
+        </div>
+        <div class="col-md-6 right-side">
+          <h1>Mulai Sekarang</h1>
+          <h2 style="font-size: 18px">Sudah punya akun?<a href="Masuk.html" style="color: white; text-decoration: "> Masuk</a></h2>
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-md-4 mt-3">
+              <img src="googel.png" class="img-fluid" />
+            </div>
+            <div class="col-md-4 mt-3">
+              <img src="fb login.png" class="img-fluid" />
+            </div>
+          </div>
+          <br />
+          <!-- garis kematian -->
+          <div class="text-center" style="display: flex; align-items: center">
+            <div style="flex: 1; height: 0">
+              <hr style="border: none; border-top: 3px solid #fff; margin: 0 10px; width: 90%" />
+            </div>
+            <h3 style="display: inline-block; margin: 0">atau</h3>
+            <div style="flex: 1; height: 0">
+              <hr style="border: none; border-top: 3px solid #fff; margin: 0 10px; width: 90%" />
+            </div>
+          </div>
+          <!-- batas garis kematian -->
+          <br /><br />
+          <form action="/login" method="post">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" name="username" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Konfirmasi Password</label>
+              <input type="password" class="form-control" id="password" name="password" />
+            </div>
+          </form>
+          <br />
+          <div class="checkbox">
+            <label class="form-check-label" for="agreeCheck">
+              <input type="checkbox" id="agreeCheck" />
+              Saya menyetujui Ketentuan Layanan dan Kebijakan Privasi platform
+            </label>
+          </div>
+          <br />
+          <br />
+          <a href="html.html">
+            <button class="btn btn-secondary mt-3" style="width: 100%; color: #276561; background-color: white; font-family: 'Plus Jakarta Sans', sans-serif">Daftar</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pemanggilan Bootstrap JS (diperlukan jika menggunakan komponen JavaScript dari Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
